@@ -61,6 +61,8 @@ cpp-project-template/
 │    │
 │    └───utils/              // Source code for utility functions
 │        └───utility_functions.cpp
+│
+├───tests/
 │  
 ├── .gitignore
 ├── CMakeLists.txt

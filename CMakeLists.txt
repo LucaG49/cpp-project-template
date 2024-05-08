@@ -35,7 +35,6 @@ file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/resources/images)
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/src/core)
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/src/gui)
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/src/network)
-file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/src/tests)
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/src/utils)
 
 # Create 'test' directory inside project directory
