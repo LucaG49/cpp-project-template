@@ -1,13 +1,13 @@
 # Project Template (C++)
 
-This is a basic template that i use for C++ projects with CMake and Vcpkg. It can be used as a starting point for new C++ projects.
+This is a basic template that i use for C++ projects with CMake and Vcpkg for Windows. It can be used as a starting point for new C++ projects.
 
 ## Prerequisites
 
 - **CMake**: Make sure you have CMake installed on your system. You can download it from [here](https://cmake.org/download/).
 - **Vcpkg**: Ensure you have Vcpkg installed and configured on your system. You can find instructions on how to install Vcpkg [here](https://github.com/microsoft/vcpkg). Please install in path "C:/vcpkg/"
-- **Visual Studio Code**: Make sure you have installed the CMake and C++ extension.
-- **Visual Studio 17 2022 generator**: CMake is configured with Visual Studio 17 2022.
+- **Visual Studio Code**: Make sure you have installed Visual Studio Code with required extensions and compilers for C++. You can find detailed instructions here [here](https://code.visualstudio.com/docs/languages/cpp)
+- **Visual Studio 17 2022 generator**: CMake is configured with Visual Studio 17 2022 generator. If you prefer to use another generator see "CMakePresets.json".
 
 ## Project Structure
 ```
@@ -75,13 +75,15 @@ This directory structure represents the layout of the project template. Each fol
 
 ## Configuration
 
-For detailed instructions on configuring and building the project using CMake, including GUI steps, visit the official CMake tutorial [here](https://cmake.org/runningcmake/).
+To learn how to add libraries using Vcpkg, follow the steps provided here [here](https://learn.microsoft.com/it-it/vcpkg/get_started/get-started?pivots=shell-cmd).
 
-To learn how to add libraries using Vcpkg, follow the steps provided in the official Vcpkg documentation [here](https://learn.microsoft.com/it-it/vcpkg/get_started/get-started?pivots=shell-cmd).
+Available libraries here [here](https://vcpkg.io/en/packages).
 
 ## Visual Studio Code:
 
-1. **Ctrl+Shift+P -> CMake: Configuration**
+1. **Ctrl+Shift+P**
+
+2. **CMake: Configuration**
 
 2. **CMake: Build**
 
