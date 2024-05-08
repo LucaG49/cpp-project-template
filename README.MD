@@ -5,8 +5,8 @@ This is a basic template that i use for C++ projects with CMake and Vcpkg for Wi
 ## Prerequisites
 
 - **CMake**: Make sure you have CMake installed on your system. You can download it from [here](https://cmake.org/download/).
-- **Vcpkg**: Ensure you have Vcpkg installed and configured on your system. You can find instructions on how to install Vcpkg [here](https://github.com/microsoft/vcpkg). Please install in path "C:/vcpkg/"
-- **Visual Studio Code**: Make sure you have installed Visual Studio Code with required extensions and compilers for C++. You can find detailed instructions here [here](https://code.visualstudio.com/docs/languages/cpp)
+- **Vcpkg**: Ensure you have Vcpkg installed and configured on your system. You can find instructions on how to install Vcpkg [here](https://github.com/microsoft/vcpkg). Please install in path "C:/vcpkg/".
+- **Visual Studio Code**: Make sure you have installed Visual Studio Code with extensions and compilers for C++. You can find detailed instructions here [here](https://code.visualstudio.com/docs/languages/cpp).
 - **Visual Studio 17 2022 generator**: CMake is configured with Visual Studio 17 2022 generator. If you prefer to use another generator see "CMakePresets.json".
 
 ## Project Structure
