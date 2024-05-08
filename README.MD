@@ -67,7 +67,6 @@ cpp-project-template/
 ├── CMakePresets.json
 ├── LICENSE
 ├── README.MD
-├── vcpkg-configuration.json
 └── vcpkg.json
 ```
 
