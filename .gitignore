@@ -1,0 +1,20 @@
+# Ignore generated build files and directories
+/build/
+
+# Ignore executable files
+*.exe
+*.out
+
+# Ignore object files and shared libraries
+*.o
+*.dll
+*.so
+*.dylib
+
+# Ignore IDE-specific configuration files
+#.vscode/
+#.idea/
+
+# Ignore CMake generated files
+CMakeFiles/
+CMakeCache.txt
