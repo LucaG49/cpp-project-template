@@ -13,10 +13,6 @@ This is a basic template that i use for C++ projects with CMake and Vcpkg for Wi
 ```
 cpp-project-template/
 │
-├───.vscode/                // Configuration files for Visual Studio Code
-│   ├───settings.json       // Project settings
-│   └───task.json           // Task configuration
-│
 ├───build/                  // Output directory for object files and executables
 │
 ├───docs/                   // Notes, instructions, and documentation
