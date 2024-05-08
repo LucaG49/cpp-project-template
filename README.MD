@@ -93,13 +93,13 @@ You can customize this template to fit your specific needs. Add new source files
 
 ## Feedback and Suggestions
 
-I value your input and am always looking to improve this project. If you have suggestions for enhancing the functionality, structure, or documentation, please feel free to share them. Here’s how you can contribute:
+As a beginner currently learning to use tools like CMake and Vcpkg, I highly value your input and am always looking to improve this project. Your suggestions for enhancing the functionality, structure, or documentation are especially welcome. Here’s how you can contribute:
 
 ### GitHub Issues
-- **Report a Bug**: If you find a bug or issue, please help by reporting it through a new issue on the GitHub repository.
-- **Feature Requests**: If you have ideas for new features or suggestions for improvements, I’d love to hear them! Just open an issue labeled 'enhancement'.
+- **Report a Bug**: If you discover a bug or issue, please help out by reporting it through a new issue on the GitHub repository. This is not only helpful to me but to everyone using the project.
+- **Feature Requests**: Have ideas for new features or improvements? I’d love to hear them! Please open an issue labeled 'enhancement'.
 
 ### Pull Requests
-- Your pull requests are warmly welcomed. If you've developed a fix or an enhancement, please submit a pull request with a clear description of what you’ve changed and why it’s beneficial.
+- If you've developed a fix or an enhancement, your pull requests are warmly welcomed. Please submit a pull request with a clear description of what you’ve changed and why it’s beneficial.
 
-Your contributions help make this project better for everyone, and I appreciate your involvement!
+Your contributions and patience are appreciated as I navigate learning these tools, and they help make this project better for everyone!
