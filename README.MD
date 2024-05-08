@@ -91,3 +91,15 @@ Available libraries here [here](https://vcpkg.io/en/packages).
 
 You can customize this template to fit your specific needs. Add new source files, dependencies, or configurations as necessary.
 
+## Feedback and Suggestions
+
+I value your input and am always looking to improve this project. If you have suggestions for enhancing the functionality, structure, or documentation, please feel free to share them. Here’s how you can contribute:
+
+### GitHub Issues
+- **Report a Bug**: If you find a bug or issue, please help by reporting it through a new issue on the GitHub repository.
+- **Feature Requests**: If you have ideas for new features or suggestions for improvements, I’d love to hear them! Just open an issue labeled 'enhancement'.
+
+### Pull Requests
+- Your pull requests are warmly welcomed. If you've developed a fix or an enhancement, please submit a pull request with a clear description of what you’ve changed and why it’s beneficial.
+
+Your contributions help make this project better for everyone, and I appreciate your involvement!
