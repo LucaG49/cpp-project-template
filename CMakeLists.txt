@@ -2,9 +2,6 @@
 cmake_minimum_required(VERSION 3.14)
 project(project_name VERSION 1.0 DESCRIPTION "Description of your project" LANGUAGES CXX)
 
-# Create 'build' directory inside project directory
-file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
-
 # Create 'docs' directory inside project directory
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/docs)
 
