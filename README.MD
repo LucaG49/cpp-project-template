@@ -13,7 +13,7 @@ This is a basic template that i use for C++ projects with CMake and Vcpkg for Wi
 ```
 cpp-project-template/
 │
-├───build/                  // Output directory for object files and executables
+├───builds/                  // Output directory for object files and executables
 │
 ├───docs/                   // Notes, instructions, and documentation
 │   ├───design_document.pdf

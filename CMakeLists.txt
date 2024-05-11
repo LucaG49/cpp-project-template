@@ -2,14 +2,6 @@
 cmake_minimum_required(VERSION 3.14)
 project(project_name VERSION 1.0 DESCRIPTION "Description of your project" LANGUAGES CXX)
 
-# Set compiler variables
-set(CMAKE_C_COMPILER "C:/msys64/ucrt64/bin/gcc.exe")
-set(CMAKE_CXX_COMPILER "C:/msys64/ucrt64/bin/g++.exe")
-set(CMAKE_MAKE_PROGRAM "C:/msys64/ucrt64/bin/mingw32-make.exe")
-
-# Find and use the fmt library
-find_package(fmt CONFIG REQUIRED)
-
 # Create 'build' directory inside project directory
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
 
@@ -40,12 +32,20 @@ file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/src/utils)
 # Create 'test' directory inside project directory
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/tests)
 
-# Include directories
-include_directories(${PROJECT_NAME} PRIVATE include)
+# Find dependencies provided by vcpkg (via vcpkg.cmake)
+find_package(fmt CONFIG REQUIRED)
 
-# Add executable target
-add_executable(${PROJECT_NAME} src/core/main.cpp)
+# main target
+add_executable(main)
+target_sources(main PRIVATE src/core/main.cpp)
+target_link_libraries(main PRIVATE fmt::fmt)
+set_property(TARGET main PROPERTY CXX_STANDARD 23)
 
-# Link libraries
-target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt)
+# tests target
+#add_executable(tests)
+#target_sources(tests PRIVATE test/test.cpp)
+#target_link_libraries(tests PRIVATE fmt::fmt)
+#set_property(TARGET tests PROPERTY CXX_STANDARD 23)
+#enable_testing()
+#add_test(tests tests)
 

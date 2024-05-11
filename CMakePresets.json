@@ -1,13 +1,65 @@
 {
-    "version": 2,
-    "configurePresets": [
+  "version": 8,
+  "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 21,
+      "patch": 0
+  },
+  "configurePresets": [
       {
-        "name": "default",
-        "generator": "Visual Studio 17 2022",
-        "binaryDir": "${sourceDir}/build",
-        "cacheVariables": {
-          "CMAKE_TOOLCHAIN_FILE": "C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
-        }
+          "name": "Visual-Studio-17-2022-vcpkg",
+          "displayName": "Visual Studio 17 2022",
+          "description": "Configure with vcpkg toolchain and generate Visual Studio 17 2022 project files for all configurations",
+          "binaryDir": "${sourceDir}/builds/${presetName}",
+          "generator": "Visual Studio 17 2022",
+          "toolchainFile": "C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
       }
-    ]
-  }
+  ],
+  "buildPresets": [
+      {
+          "name": "Visual-Studio-17-2022-degug",
+          "configurePreset": "Visual-Studio-17-2022-vcpkg",
+          "displayName": "Build (Debug)",
+          "description": "Build with Visual Studio 17 2022/vcpkg (Debug)",
+          "configuration": "Debug"
+      },
+      {
+          "name": "Visual-Studio-17-2022-release",
+          "configurePreset": "Visual-Studio-17-2022-vcpkg",
+          "displayName": "Build (Release)",
+          "description": "Build with Visual Studio 17 2022/vcpkg (Release)",
+          "configuration": "Release"
+      },
+      {
+          "name": "Visual-Studio-17-2022-vcpkg",
+          "configurePreset": "Visual-Studio-17-2022-vcpkg",
+          "displayName": "Build",
+          "description": "Build with Visual Studio 17 2022/vcpkg"
+      }
+  ],
+  "testPresets": [
+      {
+          "name": "test-Visual-Studio-17-2022-vcpkg",
+          "configurePreset": "Visual-Studio-17-2022-vcpkg",
+          "hidden": true
+      },
+      {
+          "name": "test-debug",
+          "description": "Test (Debug)",
+          "displayName": "Test (Debug)",
+          "configuration": "Debug",
+          "inherits": [
+              "test-Visual-Studio-17-2022-vcpkg"
+          ]
+      },
+      {
+          "name": "test-release",
+          "description": "Test (Release)",
+          "displayName": "Test (Release)",
+          "configuration": "Release",
+          "inherits": [
+              "test-Visual-Studio-17-2022-vcpkg"
+          ]
+      }
+  ]
+}

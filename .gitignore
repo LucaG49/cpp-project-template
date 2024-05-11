@@ -1,5 +1,5 @@
 # Ignore generated build files and directories
-/build/
+/builds/
 
 # Ignore executable files
 *.exe
